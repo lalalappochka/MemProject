@@ -6,7 +6,7 @@ import logo from '../pics/logo.png'
 import figure from '../pics/figure.jpg'
 import IconButton from '../components/UI/IconButton'
 
-const Login = (props) =>{
+const Registration = (props) =>{
 return (
     
     <Container>
@@ -16,14 +16,8 @@ return (
             <h2>Log In</h2>
             <InputWrapper>
             <InfoInput placeholder='email id'></InfoInput>
+            <InfoInput placeholder='nickname'></InfoInput>
             <InfoInput placeholder='password'></InfoInput>
-            <CheckWrapper>
-            <CheckBox>
-            <input id='remember' type='checkbox'/>
-            <label for='remember'>Remember me</label>
-            </CheckBox>
-            <span>Forgot password</span>
-            </CheckWrapper>
             <LoginButton text='Log In'></LoginButton>
             </InputWrapper>
             <AlternativeLogin>
@@ -85,20 +79,6 @@ const InputWrapper = styled.div`
  text-align: left;
  gap: 1rem; 
 `
- const CheckWrapper = styled.div`
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- font-size: 11px;
- font-family: 'Poppins Regular';
- color:${colors.grey}
-`
-const CheckBox = styled.div`
-display: flex;
-font-size: 11px;
- font-family: 'Poppins Regular';
- color:${colors.grey}
-`
 const AlternativeLogin = styled.div`
 display: flex;
     align-items: center;
@@ -133,5 +113,5 @@ display: flex;
     width: 60%;
 `
 
-export default Login
+export default Registration
  
