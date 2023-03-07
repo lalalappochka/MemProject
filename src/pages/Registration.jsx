@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 import colors from '../constants/colors'
 import LoginButton from '../components/UI/Button'
@@ -5,8 +6,10 @@ import InfoInput from '../components/Input'
 import logo from '../pics/logo.png'
 import figure from '../pics/figure.jpg'
 import IconButton from '../components/UI/IconButton'
+import Icon from '../components/UI/Icon'
+import { Link } from 'react-router-dom'
 
-const Registration = (props) =>{
+const Registration = () =>{
 return (
     
     <Container>
@@ -27,12 +30,11 @@ return (
             <Dash/>
             </Divide>
             <IconLogin>
-            <IconButton icon='twitter'></IconButton>
-            <IconButton icon='twitter'></IconButton>
+            <IconButton icon={'twitter'} size={30}></IconButton>
+            <IconButton icon={'google'} size={30}></IconButton>
             </IconLogin>
-            
+            <Link to='/registration'>Have an account?</Link>
             </AlternativeLogin>
-            
         </FormContainer>
         <img src={figure} alt="" height='480px' width='400px' />
         </Inside>
@@ -79,12 +81,28 @@ const InputWrapper = styled.div`
  text-align: left;
  gap: 1rem; 
 `
+ const CheckWrapper = styled.div`
+ display: flex;
+ column-gap: 5em;
+ justify-content: space-between;
+ font-size: 11px;
+ font-family: 'Poppins Regular';
+ color:${colors.grey}
+`
+const CheckBox = styled.div`
+display: flex;
+font-size: 11px;
+ font-family: 'Poppins Regular';
+ color:${colors.grey}
+`
 const AlternativeLogin = styled.div`
 display: flex;
     align-items: center;
     flex-direction: column;
    // height: 20px;
     width: 100%;
+    font-family:'Poppins Regular' ;
+    font-size: 80%
 
 `
 const Divide = styled.div`
@@ -108,9 +126,11 @@ const Dash = styled.div`
 const IconLogin = styled.div`
 display: flex;
     align-items: center;
-    flex-direction: row;
-    height: 40px;
-    width: 60%;
+    column-gap: 1em;
+
+    
+    /* height: 40px;
+    width: 60%; */
 `
 
 export default Registration

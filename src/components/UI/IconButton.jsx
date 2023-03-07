@@ -1,10 +1,11 @@
+import React from 'react'
 import styled from "styled-components";
 import colors from "../../constants/colors";
 import Icon from "./Icon";
 
-const IconButton = (style, icon,size, ...props) =>{
-    return (<Button style={style}>
-        {!!icon && <Icon icon='icon' size={30}/> }
+const IconButton = ({icon, size}) => { 
+    return (<Button>
+        <Icon icon={icon} size={size}/> 
     </Button>)
 }
 
@@ -17,7 +18,7 @@ const Button = styled.button`
     border-color:${colors.borderIcon};
     border-radius: 70%;
     height: auto;
-    width: 15%;
+    width: 40%;
 `
 
 export default IconButton
