@@ -33,7 +33,7 @@ return (
             <IconButton icon={'twitter'} size={30}></IconButton>
             <IconButton icon={'google'} size={30}></IconButton>
             </IconLogin>
-            <Link to='/registration'>Have an account?</Link>
+            <Link to='/login'>Have an account?</Link>
             </AlternativeLogin>
         </FormContainer>
         <img src={figure} alt="" height='480px' width='400px' />
