@@ -1,16 +1,15 @@
 import React from 'react'
 import IcomoonReact from 'icomoon-react'
-import colors from '../../constants/colors';
+import colors from '../../constants/colors'
 
-const iconSet = require('./selection.json')
-const Icon = ({icon, color, size}) => (
- <IcomoonReact 
-    iconSet={iconSet} 
+const iconSet = require('../../assets/selection.json')
+const Icon = ({ icon, color, size }) => (
+  <IcomoonReact
+    iconSet={iconSet}
     icon={icon}
-    color={color|| colors.orange}
-    size={size||24}
-        />) 
-
-
+    color={color || colors.orange}
+    size={size || 24}
+  />
+)
 
 export default Icon
