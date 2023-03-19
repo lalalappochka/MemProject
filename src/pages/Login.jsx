@@ -7,13 +7,13 @@ import logo from '../assets/logo.png'
 import figure from '../assets/figure.jpg'
 import IconButton from '../components/UI/IconButton'
 import { Link } from 'react-router-dom'
+require('checkboxes')
 
 const Login = () => {
   return (
     <Container>
       <FormContainer>
         <Logo>
-          <img src={logo} alt='' />
         </Logo>
         <Title>
         <h2>Log In</h2>
@@ -23,7 +23,7 @@ const Login = () => {
           <Input placeholder='password'></Input>
           <CheckWrapper>
             <CheckBox>
-              <input id='remember' type='checkbox' />
+              <input id='remember' type='checkbox' style="--size: 20px; --radius: 8px; --bg: #000000; --color: #F47A37; --time: 0.4s;" />
               <label for='remember'>Remember me</label>
             </CheckBox>
             <span>Forgot password</span>
@@ -44,7 +44,6 @@ const Login = () => {
         </AlternativeLogin>
       </FormContainer>
       <Figure>
-            <img src={figure} alt=''/>
       </Figure>
     </Container>
   )
@@ -72,11 +71,14 @@ export const FormContainer = styled.div`
 export const Logo = styled.div`
   height: 115px;
   width: 110px;
+  background-image: url(${logo});
+  background-position: center;
+  background-size: 115px 110px;
 `
 export const Title = styled.div`
     display:flex;
     align-self: flex-start;
-    margin-left: 19%;
+    margin-left: 68px;
     font-family: 'Poppins Medium';
 `
 export const InputWrapper = styled.div`
@@ -109,24 +111,24 @@ export const AlternativeLogin = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 15px;
-  width: 100%;
+  width: 380px;
   font-family: 'Poppins Regular';
-  font-size: 80%;
-  margin-top: 3%;
+  font-size: 11px;
+  margin-top: 15px;
 `
 export const Divider = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
   height: 20px;
-  width: 60%;
+  width: 228px;
   font-size: 12px;
   font-family: 'Poppins Regular';
   color: ${colors.grey};
 `
 export const Dash = styled.div`
   border-bottom: dashed 2px ${colors.grey};
-  width: 100%;
+  width: 120px;
   margin-left: 10px;
   margin-right: 10px;
 `
@@ -138,6 +140,9 @@ export const IconLogin = styled.div`
 export const Figure = styled.div`
   height: 480px;
   width: 400px;
+  background-image: url(${figure});
+  background-position: center;
+  background-size: 400px 480px;
 `
 
 export default Login

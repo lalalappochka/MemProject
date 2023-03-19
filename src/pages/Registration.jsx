@@ -23,7 +23,6 @@ const Registration = () => {
     <Container>
       <FormContainer>
         <Logo>
-          <img src={logo} alt='' />
         </Logo>
         <Title>
         <h2>Registration</h2>
@@ -48,7 +47,6 @@ const Registration = () => {
         </AlternativeLogin>
       </FormContainer>
       <Figure>
-            <img src={figure} alt=''/>
         </Figure>
     </Container>
   )
