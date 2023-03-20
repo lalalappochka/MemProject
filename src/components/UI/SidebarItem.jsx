@@ -1,7 +1,8 @@
 import React from "react";
+import styled from "styled-components";
 import Icon from "./Icon";
 
-const sidebarItem = (text, icon, size) =>{
+const SidebarItem = ({text, icon, size}) =>{
     return(
         <BarItem>
         <Icon icon={icon} size={size} />
@@ -16,4 +17,4 @@ const BarItem = styled.div`
  height: 40px;
  width: 200px;
 `
-export default BarItem
+export default SidebarItem

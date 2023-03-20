@@ -1,37 +1,30 @@
 import React from 'react'
 import styled from 'styled-components'
 import colors from '../constants/colors'
+import Sidebar from '../components/UI/Sidebar'
+import UserPanel from '../components/UI/UserPanel'
 
 const UserProfile = () =>{
-    return (  <profileContainer>
-        <menuContainer>
-            <a>Menu</a>
-        </menuContainer>
-        <infoContainer>
+    return (  
+    <ProfileContainer>
+        <UserPanel />
+        <Sidebar></Sidebar>
+        <InfoContainer>
             <a>Hello world its my page</a>
-        </infoContainer>
-    </profileContainer>
+        </InfoContainer>
+    </ProfileContainer>
 )}
   
 
-const profileContainer = styled.div`
+const ProfileContainer = styled.div`
   display: flex;
   justify-content: center;
   background-color: ${colors.theme};
   height: 731px;
   width: 1536px;  
 `
-const menuContainer = styled.div`
-display: flex;
-align-items: center;
-justify-content: left;
-height: 731px;
-width: 500px;
-background-color: ${colors.borderIcon} ;
-border-color: aqua;
-`
-const infoContainer = styled.div`
-display: flex;
+const InfoContainer = styled.div`
+    display: flex;
 align-items: center;
 height: 731px;
 width: 1036px;    
