@@ -23,7 +23,7 @@ const Login = () => {
           <Input placeholder='password'></Input>
           <CheckWrapper>
             <CheckBox>
-              <input id='remember' type='checkbox' style="--size: 20px; --radius: 8px; --bg: #000000; --color: #F47A37; --time: 0.4s;" />
+              <input id='remember' type='checkbox' className='checkbox' />
               <label for='remember'>Remember me</label>
             </CheckBox>
             <span>Forgot password</span>
