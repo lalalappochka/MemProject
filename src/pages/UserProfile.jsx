@@ -17,6 +17,7 @@ const UserProfile = () =>{
             <Title>
              <h2>Bio Graph</h2>
             </Title>
+            <InfoWrapper>
             <InfoPanel>
             <InfoElement>
             <UserInfo text={'First name:'}></UserInfo>
@@ -44,6 +45,7 @@ const UserProfile = () =>{
             </InfoElement>
             </InfoPanel>
             <LoginButton text='Change Info'></LoginButton>
+            </InfoWrapper>
         </InfoContainer>
     </ProfileContainer>
 )}
@@ -74,23 +76,31 @@ const Profile = styled.div`
   background-size: 200px 200px;
   border-radius:  100px;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 60px;
 `
 const InfoPanel = styled.div`
   display:flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   height: 120px;
-  width: 1000px;
+  width: 1100px;
   border-radius:  2px;
-  border-color: antiquewhite;
+  background-color: ${colors.white};
 `
 const InfoElement = styled.div`
   display:flex;
   justify-content: space-between;
   flex-direction: row;
   width: 270px;
+`
+const InfoWrapper = styled.div`
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 50px;
 `
 
 
