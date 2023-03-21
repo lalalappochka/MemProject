@@ -7,7 +7,7 @@ import profile from '../../../assets/profile.jpg'
 const Sidebar = () => {
     return(
         <SidebarContainer>
-            <UserPanel text = 'My name' profileUrl={profile}/>
+            <UserPanel text = 'Lalalappochka' profileUrl={profile}/>
             <Content>  
             <SidebarItem icon={'home'} text="Home" route="/login"/>
             <SidebarItem icon={'mem'} text="Create" />
@@ -22,7 +22,7 @@ const Sidebar = () => {
 const SidebarContainer = styled.div`
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 731px;
     width:  300px;
     font-family: 'Poppins Regular';
     font-size:  12px;

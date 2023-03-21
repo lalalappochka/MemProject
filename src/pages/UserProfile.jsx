@@ -4,6 +4,8 @@ import colors from '../constants/colors'
 import Sidebar from '../components/UI/sidebar/Sidebar'
 import profile from '../assets/profile.jpg'
 import UserInfo from '../components/UI/UserInfo'
+import {Title} from './Login'
+import LoginButton from '../components/UI/Button'
 
 const UserProfile = () =>{
     return (  
@@ -12,8 +14,36 @@ const UserProfile = () =>{
         </Sidebar>
         <InfoContainer>
             <Profile/>
-            <UserInfo text={'Lapo ALexandra'}></UserInfo>
+            <Title>
+             <h2>Bio Graph</h2>
+            </Title>
+            <InfoPanel>
+            <InfoElement>
+            <UserInfo text={'First name:'}></UserInfo>
+            <UserInfo text={'ALexandra'}></UserInfo>
+            </InfoElement>
+            <InfoElement>
+            <UserInfo text={'Last name:'}></UserInfo>
+            <UserInfo text={'Lapo'}></UserInfo>
+            </InfoElement>
+            <InfoElement>
+            <UserInfo text={'Nickname:'}></UserInfo>
             <UserInfo text={'Lalalappochka'}></UserInfo>
+            </InfoElement>
+            <InfoElement>
+            <UserInfo text={'Mobile:'}></UserInfo>
+            <UserInfo text={'80447831120'}></UserInfo>
+            </InfoElement>
+            <InfoElement>
+            <UserInfo text={'Birthday:'}></UserInfo>
+            <UserInfo text={'25 June'}></UserInfo>
+            </InfoElement>
+            <InfoElement>
+            <UserInfo text={'Email:'}></UserInfo>
+            <UserInfo text={'sanyalappo16@gmail.com'}></UserInfo>
+            </InfoElement>
+            </InfoPanel>
+            <LoginButton text='Change Info'></LoginButton>
         </InfoContainer>
     </ProfileContainer>
 )}
@@ -31,7 +61,7 @@ const InfoContainer = styled.div`
   flex-direction: column;
   height: 731px;
   width: 1236px;    
-  background-color: ${colors.blue};
+  background-color: ${colors.background};
   font-family: "Poppins Regular";
 `
 const Profile = styled.div`
@@ -46,4 +76,22 @@ const Profile = styled.div`
   margin-top: 20px;
   margin-left: 50px;
 `
+const InfoPanel = styled.div`
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 120px;
+  width: 1000px;
+  border-radius:  2px;
+  border-color: antiquewhite;
+`
+const InfoElement = styled.div`
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 270px;
+`
+
+
 export default UserProfile

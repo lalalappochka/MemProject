@@ -11,7 +11,8 @@ const UserInfo = ({text}) =>{
 
 const Info = styled.div`
 display: flex;
-align-items: flex-start;
+align-items: center;
+flex-direction: row;
 font-size: 20px;
 width: 200px;
 border-bottom: 10px;

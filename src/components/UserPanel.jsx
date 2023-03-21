@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import colors from "../constants/colors";
 
 const UserPanel = ({text, profileUrl}) =>{
     return(
@@ -16,9 +17,10 @@ const UserInfoPanel = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 700px;
-  margin-top: 30px;
+  height: 200px;
   gap: 5px;
+  background-color: ${colors.lightOrange};
+  font-size: 15px;
 `
 const Image = styled.img`
  border-radius: 100px;
