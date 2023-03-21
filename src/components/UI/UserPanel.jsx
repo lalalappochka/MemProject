@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const UserPanel = () =>{
+const UserPanel = ({text, profileUrl}) =>{
     return(
         <UserInfoPanel>
-
+            <Image src={profileUrl}></Image>
+            {text}
         </UserInfoPanel>
 
     )
@@ -12,5 +13,16 @@ const UserPanel = () =>{
 
 const UserInfoPanel = styled.div`
   display  : flex ;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 700px;
+  margin-top: 15px;
+  gap: 10px;
+`
+const Image = styled.img`
+ border-radius: 100px;
+ height: 90px;
+ width: 90px;
 `
 export default UserPanel
