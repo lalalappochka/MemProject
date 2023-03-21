@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import colors from '../../../constants/colors'
 import SidebarItem from './SidebarItem'
-import UserPanel from '../UserPanel'
-import profile from '../../assets/profile.jpg'
+import UserPanel from '../../UserPanel'
+import profile from '../../../assets/profile.jpg'
 
 const Sidebar = () => {
     return(
