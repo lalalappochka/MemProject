@@ -17,8 +17,8 @@ const UserInfoPanel = styled.div`
   align-items: center;
   flex-direction: column;
   height: 700px;
-  margin-top: 15px;
-  gap: 10px;
+  margin-top: 30px;
+  gap: 5px;
 `
 const Image = styled.img`
  border-radius: 100px;

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import colors from '../../constants/colors'
+import colors from '../../../constants/colors'
 import SidebarItem from './SidebarItem'
-import UserPanel from './UserPanel'
+import UserPanel from '../UserPanel'
 import profile from '../../assets/profile.jpg'
 
 const Sidebar = () => {
@@ -11,7 +11,7 @@ const Sidebar = () => {
             <Content>  
             <SidebarItem icon={'home'} text="Home" route="/login"/>
             <SidebarItem icon={'mem'} text="Create" />
-            <SidebarItem icon={'user'} text="Profile" />
+            <SidebarItem icon={'user'} text="Profile" route="/user-profile"/>
             </Content> 
 
         </SidebarContainer>

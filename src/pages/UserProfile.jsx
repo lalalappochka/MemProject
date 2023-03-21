@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import colors from '../constants/colors'
-import Sidebar from '../components/UI/Sidebar'
+import Sidebar from '../components/UI/sidebar/Sidebar'
 import profile from '../assets/profile.jpg'
 import UserInfo from '../components/UI/UserInfo'
 
