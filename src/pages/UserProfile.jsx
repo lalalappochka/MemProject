@@ -18,6 +18,9 @@ const UserProfile = () =>{
              <h2>Bio Graph</h2>
             </Title>
             <InfoWrapper>
+            <AboutUser>
+              <span>Xexe prickolchik</span>
+            </AboutUser>
             <InfoPanel>
             <InfoElement>
             <UserInfo text={'First name:'}></UserInfo>
@@ -88,6 +91,7 @@ const InfoPanel = styled.div`
   width: 1100px;
   border-radius:  2px;
   background-color: ${colors.white};
+  margin-bottom: 50px;
 `
 const InfoElement = styled.div`
   display:flex;
@@ -100,7 +104,16 @@ const InfoWrapper = styled.div`
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   gap: 50px;
+`
+const AboutUser = styled.div`
+   height: 100px;
+   width: 1100px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   font-family: "Poppins Regular";
+   font-size: 20px;
+  background-color: ${colors.lightOrange};
 `
 
 
